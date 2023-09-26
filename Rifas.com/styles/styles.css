@@ -1,0 +1,254 @@
+/* cores do site */
+:root{
+    --cor-primaria: #222831;
+    --cor-secundaria: #393E46;
+    --cor-terciaria: #00ADB5;
+    --cor-letras:#EEEEEE;
+}
+
+/* corpo do site */
+body{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-letras);
+}
+
+p{
+    font-size: small;
+}
+
+/* cabecalho do site */
+header{
+    height: 70px;
+    width: 100%;
+    background-color:var(--cor-terciaria) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+#banner{
+    height: 70px;
+    width: 70%;
+}
+
+#icones{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cart, #menu{
+    width: 40px;
+}
+
+/* conteudo principal */
+
+.principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* cards */
+.FistCard{
+    background-color: var(--cor-primaria);
+    width: 90%;
+    border-radius: 20px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: var(--cor-letras);
+    
+}
+
+.rifa-imagem{
+    width: 100%;
+}
+
+.rifa-descricao{
+    width: 100%;
+    color: var(--cor-letras);
+}
+
+.sugestao{
+    text-align: center;
+    color: var(--cor-letras);
+    display: flex;
+    justify-content: center;
+}
+
+#sugestao{
+    width: 30%;
+    background-color: green;
+    border-radius: 4px;
+    animation: changeColor 2s ease infinite;
+}
+
+/*cards concluidos*/
+.secundario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.card-concluidos{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-primaria);
+    width: 90%;
+    border-radius: 10px
+}
+
+.card-imagem{
+    width: 40%;
+    height: 100%;
+}
+
+#card-img{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.titulo-secundario{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 60%;
+}
+
+.status-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.status{
+    background-color: var(--cor-terciaria);
+    width: fit-content;
+    font-size: small;
+    border-radius: 2px
+}
+
+/*contato*/
+
+.suporte{
+    background-color: var(--cor-primaria);
+    width: 90%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 10px
+}
+
+#suport-icon{
+    width: 40%;
+}
+
+.suporte-descrição{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*cards vencedores*/
+.vencedores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+
+
+.card-vencedores{
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    padding: 7px;
+}
+
+.img-vencedores{
+    width: 40%;
+    
+}
+
+.foto{
+    width: 90%;
+    height: 100%;
+}
+
+p, h6{
+    color: var(--cor-letras);
+}
+
+/*Contatos*/
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 30px
+}
+
+#whatsapp{
+    background-color: green;
+    width: 10%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+#instagram{
+    background-color: red;
+    width: 10%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+#facebook{
+    background-color: blue;
+    width: 10%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+#contato-imagem{
+    width: 90%;
+    height: 100%;
+}
+
+/*animação para mudar de cor*/
+@keyframes changeColor {
+    0% {
+        opacity: 0;
+      }
+
+    50%{
+        opacity: 1;
+    } 
+
+    100% {
+        opacity: 0;
+    } 
+}
