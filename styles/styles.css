@@ -10,6 +10,9 @@
 body{
     background-color: var(--cor-secundaria);
     color: var(--cor-letras);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p{
@@ -24,6 +27,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    
    
 }
 
@@ -44,6 +49,10 @@ header{
 }
 
 /* conteudo principal */
+main{
+    max-width: 768px;
+    margin-top: 70px;
+}
 
 .principal{
     width: 100%;
@@ -206,7 +215,8 @@ p, h6{
     flex-direction: row;
     justify-content: center;
     gap: 5px;
-    height: 30px
+    height: 30px;
+    margin-top: 10px;
 }
 
 #whatsapp{
@@ -252,3 +262,56 @@ p, h6{
         opacity: 0;
     } 
 }
+
+/* Responsividade */
+@media (min-width: 768px) {
+    
+    /*header*/
+    #logo{
+        height: 97%;
+        width: 100px;
+    }
+
+    #icones{
+        justify-content: flex-end;
+    }
+
+    #cart, #menu {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    /*Conteudo Principal */
+    .titulo {
+        justify-content: center;
+    }
+
+    p{
+        font-size: larger;
+    }
+
+    .titulo-secundario h6{
+        font-size: 2rem;
+    }
+
+    .status{
+        width: 100px;
+        text-align: center;
+        font-size: larger;
+    }
+    
+    .descricao-vencedores{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descricao-vencedores h6{
+        font-size: 2rem;
+    }
+
+    .descricao-vencedores p{
+        font-size: 1.4rem;
+    }
+  }
